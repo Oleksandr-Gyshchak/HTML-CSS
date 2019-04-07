@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+    <style>
+      body {
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      table {
+        margin: 0 auto;
+      }
+
+      body {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>User Form</h1>
+    <hr>
+
+    <form action="" formmethod="get">
+      <p>
+        <label for="name">
+          <b>
+            Enter Name:
+          </b>
+        </label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+      </p>
+
+      <p>
+        <label for="password">
+          <b>
+            Enter Password:
+          </b>
+        </label>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </p>
+
+      <p>
+        <label for="address">
+          <b>
+            Enter Address:
+          </b>
+        </label>
+        <br>
+        <textarea name="address" id="address" cols="30" rows="10" maxlength="200" required></textarea>
+      </p>
+
+      <p>
+        <span>
+          <b>
+            Select game:
+          </b>
+        </span>
+
+        <br>
+
+        <input type="checkbox" name="hockey" id="hockey" value="on">
+        <label for="hockey">
+          - Hockey
+        </label>
+
+        <br>
+        <input type="checkbox" name="football" id="football" value="on">
+        <label for="football">
+          - Football
+        </label>
+
+        <br>
+        <input type="checkbox" name="badminton" id="badminton" value="on">
+        <label for="badminton">
+          - Badminton
+        </label>
+
+        <br>
+        <input type="checkbox" name="volleyball" id="volleyball" value="on">
+        <label for="volleyball">
+          - Volleyball
+        </label>
+      </p>
+
+      <p>
+        <span>
+          <b>
+            Gender :
+          </b>
+        </span>
+        <br>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">
+          Male
+        </label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">
+          Female
+        </label>
+      </p>
+
+      <p>
+        <label for="age">
+          <b>
+            Select age:
+          </b>
+        </label>
+        <select name="age" id="age">
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18" selected>18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+      </p>
+
+      <hr>
+
+      <p>
+        <button type="button">Click</button>
+        <button type="button" disabled>Disabled</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Form</button>
+      </p>
+
+    </form>
+
+  </body>
+
+</html>
